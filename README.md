@@ -3,6 +3,11 @@
 MySQLi Class for an easy Implementation
 
 
+### MINIMAL
+
+- PHP 5.X
+
+
 ###INSTALL
 
 
