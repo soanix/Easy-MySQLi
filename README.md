@@ -56,3 +56,11 @@ $db->create("SELECT * FROM users WHERE `password`= ':password'");
 $db->safe(':password', $password);
 $db->exec() OR $db->get_array();
 ```
+
+**Prevent SQL inyection without htmlspecialchars:**
+
+```php
+$db->create("SELECT * FROM users WHERE `password`= ':password'");
+$db->safeLiteral(':password', $password);
+$db->exec() OR $db->get_array();
+```
