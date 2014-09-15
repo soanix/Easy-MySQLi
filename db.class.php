@@ -8,7 +8,7 @@ class db extends mysqli
 		include(_CONFIG_.'/settings.inc.php');
 		parent::__construct( "HOST" , "DB_USER", "DB_PASSWORD", "DB_NAME" );
 	}
-	function consulta($consulta){
+	function create($consulta){
 		$this->sql = $consulta;
 		$this->set_charset("utf8");
 	}
